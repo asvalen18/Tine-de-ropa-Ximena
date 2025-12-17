@@ -3,54 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Página de Ximena</title>
+<title>Ximena Fashion Store</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #fff;
-  color: #333;
 }
 
-/* --- HEADER + LOGO --- */
-.header-top {
-  background: white;
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
   border-bottom: 2px solid #ffd6ec;
-  padding: 15px 0;
-  display: flex;
-  justify-content: center;
 }
 
-.logo-container img {
-  width: 180px;
-  height: auto;
+/* LOGO */
+.header img {
+  height: 70px;
 }
 
-/* --- MENÚ --- */
-nav {
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px 0;
-  font-size: 17px;
-  flex-wrap: wrap;
-}
-
+/* MENÚ */
 nav a {
-  color: #ff4d9e;
+  margin-left: 20px;
   text-decoration: none;
+  color: #ff4da6;
   font-weight: bold;
+  font-size: 16px;
 }
 
 nav a:hover {
-  border-bottom: 3px solid #ff4d9e;
+  border-bottom: 2px solid #ff4da6;
 }
 
-/* --- BANNER --- */
+/* BANNER */
 .banner {
-  width: 100%;
   height: 350px;
   background: url('https://i.pinimg.com/736x/36/a1/de/36a1de4d46b7162b7dacf964151d7869.jpg') center/cover no-repeat;
   display: flex;
@@ -60,28 +50,28 @@ nav a:hover {
 
 .banner h2 {
   background: rgba(255,255,255,0.85);
+  padding: 15px 30px;
+  border-radius: 15px;
   color: #ff4da6;
-  padding: 15px 25px;
-  border-radius: 12px;
   font-size: 32px;
 }
 
-/* --- PRODUCTOS --- */
+/* PRODUCTOS */
 .seccion {
-  padding: 40px 20px;
+  padding: 40px;
 }
 
 .titulo-seccion {
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   color: #ff4da6;
   margin-bottom: 30px;
 }
 
 .productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
 }
 
 .producto {
@@ -97,52 +87,37 @@ nav a:hover {
 
 .producto img {
   width: 100%;
-  height: 230px;
+  height: 250px;
   object-fit: cover;
 }
 
 .producto-info {
-  padding: 10px;
+  padding: 12px;
   text-align: center;
 }
 
 .producto-info h4 {
   color: #ff4da6;
-}
-
-/* --- WHATSAPP --- */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 15px 18px;
-  border-radius: 50%;
-  font-size: 26px;
-  text-decoration: none;
+  margin: 8px 0;
 }
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<div class="header-top">
-  <div class="logo-container">
-    <img src="logo.png" alt="Ximens Fashion Store">
-  </div>
-</div>
+<!-- HEADER -->
+<div class="header">
+  <img src="logo.png" alt="Ximena Fashion Store">
 
-<!-- MENÚ -->
-<nav>
-  <a href="#">Novedades</a>
-  <a href="#">Camisetas</a>
-  <a href="#">Sudaderas</a>
-  <a href="#">Chaquetas</a>
-  <a href="#">Jeans</a>
-  <a href="#">Ofertas</a>
-</nav>
+  <nav>
+    <a href="#">Novedades</a>
+    <a href="#">Camisetas</a>
+    <a href="#">Sudaderas</a>
+    <a href="#">Chaquetas</a>
+    <a href="#">Jeans</a>
+    <a href="#">Ofertas</a>
+  </nav>
+</div>
 
 <!-- BANNER -->
 <div class="banner">
@@ -154,9 +129,8 @@ nav a:hover {
   <h3 class="titulo-seccion">Productos Destacados</h3>
 
   <div class="productos">
-
     <div class="producto">
-      <img src="https://via.placeholder.com/400x400">
+      <img src="https://via.placeholder.com/400">
       <div class="producto-info">
         <h4>Chaqueta Oversize</h4>
         <p>$89.900</p>
@@ -164,16 +138,15 @@ nav a:hover {
     </div>
 
     <div class="producto">
-      <img src="https://via.placeholder.com/400x400">
+      <img src="https://via.placeholder.com/400">
       <div class="producto-info">
         <h4>Jean Skinny</h4>
         <p>$79.900</p>
       </div>
     </div>
-
   </div>
 </div>
-
+  
 <a class="whatsapp-float" href="https://wa.me/573000000000" target="_blank">💬</a>
 
 </body>
